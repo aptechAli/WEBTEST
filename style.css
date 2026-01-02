@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Miniver&family=Sekuya&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green-color: #103d36;
+  --white-color: #ffffff;
+  --golden-color: #ffe195;
+  --grey-color: rgb(150, 148, 148);
+  --yellow-color: yellow;
+  --black-color:black;;
+
+  --font-size-s: 0.9rem;
+  /* Size */
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+  /* Font weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /*Border radius*/
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+}
+.top-heading {
+  text-align: center;
+  background: var(--green-color);
+  color: var(--white-color);
+  font-size: var(--font-size-m);
+  padding: 11px 0;
+  width: 100%;
+}
+.boss_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  padding: 40px 0;
+  background: var(--white-color);
+}
+.boss_div .boss-img {
+  height: 120px;
+  margin-top: 40px;
+}
+.boss_div .phone_btn {
+  background: var(--green-color);
+  color: var(--white-color);
+  padding: 10px;
+  border-radius: var(--border-radius-s);
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+.boss_div .phone_btn:hover {
+  transform: scale(1.1); /* 20% zoom in */
+}
+.boss_div .trolley_btn {
+  background: var(--white-color);
+  color: var(--green-color);
+  margin-right: 15px;
+}
+.trolley_btn i {
+  font-size: 30px; /* icon size increase */
+}
+.banner {
+  background-image: url("./background_img.webp");
+  background-size: cover; /* poora area cover kare */
+  width: 100%; /* optional, div width */
+  height: 400px;
+}
+/* Nav bar section styling */
+
+.nav_bar_section .nav_menu .menu-items {
+  padding: 10px 0;
+  font-weight: var(--font-weight-bold);
+  margin-left: 20px;
+  
+}
+.nav_bar_section .nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  list-style-type: none;
+  background: var(--green-color);
+  /* padding: 10px 0; */
+}
+.nav_bar_section .nav_menu a {
+  text-decoration: none;
+  color: var(--white-color);
+  display: inline-block; /* added */
+  white-space: nowrap; /* added to prevent wrapping */
+  padding: 11px 10px;
+  transition: 0.3s ease;
+  border-radius: var(--border-radius-s);
+  font-weight: var(--font-weight-bold);
+}
+.nav_bar_section .nav_menu a:hover {
+  background: var(--golden-color);
+  color: var(--green-color);
+  transform: scale(1.05s);
+}
+/* hero section styling */
+body {
+  background-color: #fff2d1;
+}
+
+.hero-section {
+  margin-top: 20px;
+}
+.hero-section .serach_tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section .serach_tab input {
+  background: var(--white-color);
+  height: 50px;
+  width: 83%;
+  border-radius: var(--border-radius-m);
+  border: solid 1px var(--grey-color);
+  padding-left: 10px;
+  transition: 0.3s ease;
+}
+.hero-section .serach_tab input:hover {
+  border: solid 2px var(--green-color);
+  transform: scale(1.05s);
+}
+/* Flat Off */
+.main_offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+/* pouplar item */
+.parent {
+  width: 83%;
+  height: 100px;
+  margin-top: 20px;
+  border-radius: var(--border-radius-s);
+  line-height:1.6;
+  margin-left: 150px;
+}
+
+.offer_content {
+  background: var(--white-color);
+  width: 83%;
+  height: 100px;
+  margin-top: 20px;
+  border-radius: var(--border-radius-s);
+  padding: 10px 0px 20px 25px;
+}
+.flat_off {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.offer_content .flat_off h1 {
+  background: var(--yellow-color);
+  padding: 10px;
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius-m);
+}
+/* popular item styling img */
+/* .popular_items_img img{
+  width: 250px;
+  height: 280px;
+  border-radius: var(--border-radius-s);
+  transition: 0.3s ease;
+}
+.popular_items_img img{
+transform: scale(1.05s);
+} */
+.popular_items_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 83%;
+  margin: 0 auto;   /* ⭐ center lane ke liye */
+}
+/* text on image */
+.popular_items_img
+{
+  position: relative;
+}
+.popular_items_img img {
+  width: 280px;
+  height: 280px;
+  border-radius: var(--border-radius-s);
+  transition: transform 0.3s ease;
+}
+
+.popular_items_img img:hover {
+  transform: scale(1.05);
+}
+.popular_items_div h4
+{
+  position: absolute;   /* sirf text absolute */
+  color: white;
+  font-size: 18px;
+  padding: 8px 10px;      /* andar ka space (top/bottom, left/right) */
+  z-index:2;
+}
+/* PRICE STYLING ON IMAGE */
+.popular_items_price{
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+  background:var(--white-color);
+  padding: 5px 10px;
+  border-radius: var(--border-radius-m);
+  color:var(--black-color);
+  font-size: 16px;
+  z-index: 2;
+}
+.popular_items_price .old_price{
+  text-decoration: line-through;
+}
+/* salad_section_styling */
+
+.salad_bar .salad_bar_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.salad_bar .salad_bar_img  img {
+  margin-top: 40px;
+  width: 83%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .banner {
+    height: 250px;
+  }
+  .boss_div .boss-img {
+    height: 80px;
+    margin-bottom: 50px;
+  }
+  .trolley_btn i {
+    font-size: 20px; /* icon size increase */
+  }
+  .boss_div .phone_btn {
+    padding: 7px;
+  }
+  .top-heading {
+    font-size: var(--font-size-s);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .banner {
+    height: 150px;
+  }
+}
